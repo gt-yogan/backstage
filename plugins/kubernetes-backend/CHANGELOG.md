@@ -1,5 +1,11 @@
 # @backstage/plugin-kubernetes-backend
 
+## 0.3.15
+
+### Patch Changes
+
+- 22fc579fe: Fixes bug reading ExternalId from k8s backend config
+
 ## 0.3.14
 
 ### Patch Changes

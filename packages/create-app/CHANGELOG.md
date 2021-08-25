@@ -1,5 +1,38 @@
 # @backstage/create-app
 
+## 0.4.0
+
+### Minor Changes
+
+- d02768171: Updated the default create-app `EntityPage` to include orphan and processing error alerts for all entity types. Previously these were only shown for entities with the `Component` kind. The `EntityPage` in Backstage applications should be updated following [d027681](https://github.com/backstage/backstage/pull/6899/commits/d0276817123ba131c9211de30d229839f13d7775). This also adds the `EntityLinkCard` for API entities.
+
+### Patch Changes
+
+- 787bc0826: Wire up TechDocs, which now relies on the composability API for routing.
+
+  First, ensure you've mounted `<TechDocsReaderPage />`. If you already updated
+  to use the composable `<TechDocsIndexPage />` (see below), no action is
+  necessary. Otherwise, update your `App.tsx` so that `<TechDocsReaderPage />` is
+  mounted:
+
+  ```diff
+       <Route path="/docs" element={<TechdocsPage />} />
+  +    <Route
+  +      path="/docs/:namespace/:kind/:name/*"
+  +      element={<TechDocsReaderPage />}
+  +    />
+  ```
+
+  Next, ensure links from the Catalog Entity Page to its TechDocs site are bound:
+
+  ```diff
+    bindRoutes({ bind }) {
+      bind(catalogPlugin.externalRoutes, {
+        createComponent: scaffolderPlugin.routes.root,
+  +     viewTechDoc: techdocsPlugin.routes.docRoot,
+      });
+  ```
+
 ## 0.3.37
 
 ## 0.3.36

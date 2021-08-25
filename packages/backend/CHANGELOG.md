@@ -1,5 +1,20 @@
 # example-backend
 
+## 0.2.43
+
+### Patch Changes
+
+- Updated dependencies
+  - @backstage/plugin-catalog-backend@0.13.5
+  - @backstage/plugin-search-backend-module-pg@0.1.3
+  - @backstage/plugin-auth-backend@0.3.23
+  - @backstage/plugin-scaffolder-backend@0.15.2
+  - @backstage/integration@0.6.2
+  - @backstage/plugin-kubernetes-backend@0.3.15
+  - @backstage/plugin-techdocs-backend@0.10.0
+  - @backstage/plugin-jenkins-backend@0.1.4
+  - example-app@0.2.43
+
 ## 0.2.41
 
 ### Patch Changes

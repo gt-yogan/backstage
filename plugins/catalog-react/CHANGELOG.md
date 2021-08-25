@@ -1,5 +1,25 @@
 # @backstage/plugin-catalog-react
 
+## 0.4.4
+
+### Patch Changes
+
+- 5a1eb6bfc: Memoize the context value in `EntityListProvider`.
+
+  This removes quite a few unnecessary rerenders of the inner components.
+
+  When running the full `CatalogPage` test:
+
+  - Before: 98 table render calls total, 16 seconds runtime
+  - After: 57 table render calls total, 14 seconds runtime
+
+  This doesn't account for all of the slowness, but does give a minor difference in perceived speed in the browser too.
+
+- Updated dependencies
+  - @backstage/core-app-api@0.1.10
+  - @backstage/core-components@0.3.3
+  - @backstage/integration@0.6.2
+
 ## 0.4.3
 
 ### Patch Changes

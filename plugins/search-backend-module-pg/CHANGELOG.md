@@ -1,5 +1,11 @@
 # @backstage/plugin-search-backend-module-pg
 
+## 0.1.3
+
+### Patch Changes
+
+- 80c562039: Sanitize special characters before building search query for postgres
+
 ## 0.1.2
 
 ### Patch Changes

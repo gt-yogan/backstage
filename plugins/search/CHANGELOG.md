@@ -1,5 +1,14 @@
 # @backstage/plugin-search
 
+## 0.4.8
+
+### Patch Changes
+
+- 16ec8381a: Fix search page to respond to searches made from sidebar search
+- Updated dependencies
+  - @backstage/plugin-catalog-react@0.4.4
+  - @backstage/core-components@0.3.3
+
 ## 0.4.7
 
 ### Patch Changes

@@ -1,5 +1,11 @@
 # @backstage/plugin-jenkins-backend
 
+## 0.1.4
+
+### Patch Changes
+
+- 4c86555a2: Fix the case where lastBuild is null.
+
 ## 0.1.3
 
 ### Patch Changes

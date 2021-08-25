@@ -1,5 +1,14 @@
 # @backstage/plugin-catalog-backend
 
+## 0.13.5
+
+### Patch Changes
+
+- 8b39242c4: GitHub discovery processor adds support for discovering the default GitHub branch
+- 96785dce3: Added GitLabDiscoveryProcessor, which allows catalog discovery from a GitLab instance
+- Updated dependencies
+  - @backstage/integration@0.6.2
+
 ## 0.13.4
 
 ### Patch Changes
